@@ -1,0 +1,5 @@
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\SingletonPattern\SingletonLibrary\bin\Debug\SingletonLibrary.dll
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\SingletonPattern\SingletonLibrary\bin\Debug\SingletonLibrary.pdb
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\SingletonPattern\SingletonLibrary\obj\Debug\SingletonLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\SingletonPattern\SingletonLibrary\obj\Debug\SingletonLibrary.dll
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\SingletonPattern\SingletonLibrary\obj\Debug\SingletonLibrary.pdb
