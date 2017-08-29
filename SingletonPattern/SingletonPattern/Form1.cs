@@ -21,7 +21,9 @@ namespace SingletonPattern
         public Form1()
         {
             InitializeComponent();
-            smallestFish = 30;
+
+            //the following two ints only control the range of random numbers generated as a "fish's length"
+            smallestFish = 9;
             largestFish  = 50;
             
         }
@@ -29,10 +31,9 @@ namespace SingletonPattern
         private void Btn_keepfish_Click(object sender, EventArgs e)
         {
             //here we actually call upon the singleton class to be demonstrated with this program
-            LivewellFish myFish = LivewellFish.getInstance(tb_justcaught.Text;
+            tb_livewell.Text = LivewellFish.getInstance(tb_justcaught.Text).getFish();
 
             //now we can set the livewell box again, either populating it with the new fish length or returning the original fish length
-            tb_livewell.Text = myFish.getFish();
 
         }
 
@@ -47,10 +48,8 @@ namespace SingletonPattern
 
         private void Btn_releasefish_Click(object sender, EventArgs e)
         {
-            LivewellFish myFish = LivewellFish.getInstance(tb_justcaught.Text);
-
-            myFish.Clear();
-            tb_livewell.Text = myFish.getFish();
+            LivewellFish.getInstance(tb_justcaught.Text).Clear();
+            tb_livewell.Text = "";
             //set the current "fish" and its length value to null
             /*
              * the reason behind having a release button is to demonstrate that unless you release
