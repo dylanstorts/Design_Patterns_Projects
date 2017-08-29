@@ -8,8 +8,8 @@ namespace SingletonLibrary
 {
     public class LivewellFish
     {
-        static LivewellFish yourFish;
-        string Livewell;
+        private static LivewellFish fishInstance;
+        public string Livewell;
 
         private LivewellFish(string fish)
         {//private constructor
@@ -18,22 +18,26 @@ namespace SingletonLibrary
 
         public static LivewellFish getInstance(string newFish)
         {
-            if (yourFish == null)
+            //here is the essence of the singleton where a single instance of it is only allowed to be in memory at once
+            if (fishInstance == null)
             {
-                LivewellFish yourFish = new LivewellFish(newFish);
+                //create a new singleton object with a different string in it if there is no existing object previously
+                fishInstance = new LivewellFish(newFish);
             }
-
-            return yourFish;
+            //return the singleton object
+            return fishInstance;
         }
 
         public string getFish()
         {
+            //this simply returns the string of the fish in the livewell that the singleton controls
             return Livewell;
         }
         
         public void Clear()
         {
-            yourFish = null;
+            //this method only exists here because we need a way to clear the instance of the first singleton to replace it with new data
+            fishInstance = null;
         }
     }
 }
