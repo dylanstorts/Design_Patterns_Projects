@@ -1,0 +1,6 @@
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\bin\Debug\IteratorLibrary.dll
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\bin\Debug\IteratorLibrary.pdb
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.dll
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.pdb

@@ -1,0 +1,2 @@
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\ConsoleApp2\obj\Debug\ConsoleApp2.csprojResolveAssemblyReference.cache
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
