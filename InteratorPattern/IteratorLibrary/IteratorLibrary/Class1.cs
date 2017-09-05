@@ -7,151 +7,91 @@ using System.Collections;
 
 namespace IteratorLibrary
 {
-    //class MainApp
-    //{
-        
-    //    /// Entry point into console application.
-    //    static void Main()
-    //    {
-    //        // Build a collection
-    //        Collection collection = new Collection();
-    //        collection[0] = new Item("Item 0");
-    //        collection[1] = new Item("Item 1");
-    //        collection[2] = new Item("Item 2");
-    //        collection[3] = new Item("Item 3");
-    //        collection[4] = new Item("Item 4");
-    //        collection[5] = new Item("Item 5");
-    //        collection[6] = new Item("Item 6");
-    //        collection[7] = new Item("Item 7");
-    //        collection[8] = new Item("Item 8");
+    
 
-    //        // Create iterator
-    //        Iterator iterator = collection.CreateIterator();
+    /// The 'Aggregate' that inherits a list of strings thus hiding the the makeup of the iterator
 
-    //        // Skip every other item
-    //        iterator.Step = 2;
-
-    //        Console.WriteLine("Iterating over collection:");
-
-    //        for (Item item = iterator.First();
-    //            !iterator.IsDone; item = iterator.Next())
-    //        {
-    //            Console.WriteLine(item.Name);
-    //        }
-
-    //        // Wait for user
-    //        Console.ReadKey();
-    //    }
-    //}
-
-    /// Item is just the type of object in this aggregate for this iterator
-
-    public class Item
+    public abstract class Aggregate : List<string>
     {
-        private string name;
-
-        public Item(string new_name)
-        {
-            this.name = new_name;
-        }
-
-        public string Name
-        {
-            get { return name;  }
-        }
-    }
-
-    /// The 'Aggregate' interface
-
-    interface AbstractCollection
-    {
-        Iterator CreateIterator();
+        public abstract Iterator CreateIterator();
     }
 
     /// The 'ConcreteAggregate' class
 
-    class Collection : AbstractCollection
+    public class ConcreteAggregate : Aggregate
     {
-        private ArrayList _items = new ArrayList();
-
-        public Iterator CreateIterator()
+        private List<string> aggList = new List<string>();
+        
+        public override Iterator CreateIterator()
         {
-            return new Iterator(this);
+            return new ConcreteIterator(this);
         }
 
-        // Gets item count
-        public int Count
-        {
-            get { return _items.Count; }
-        }
+        //public int Count()
+        //{
+        //    return aggList.Count;
+        //}
 
-        // Indexer
-        public object this[int index]
-        {
-            get { return _items[index]; }
-            set { _items.Add(value); }
-        }
+        //public string Get(int index)
+        //{
+        //    return aggList.ElementAt(index);
+        //}
+
+        //public void Set(string newItem)
+        //{
+        //    aggList.Add(newItem);
+        //}
     }
 
     /// The 'Iterator' interface
 
-    interface IAbstractIterator
+    public abstract class Iterator
     {
-        Item First();
-        Item Next();
-        bool IsDone { get; }
-        Item CurrentItem { get; }
+        abstract public void First();
+        abstract public void Next();
+        abstract public bool IsDone();
+        abstract public string CurrentItem();
     }
     
     /// The 'ConcreteIterator' class
 
-    class Iterator : IAbstractIterator
+    public class ConcreteIterator : Iterator
     {
-        private Collection _collection;
-        private int _current = 0;
-        private int _step = 1;
+        private int current;
+        private int step = 1;
+        private ConcreteAggregate agg;
 
-        // Constructor
-        public Iterator(Collection collection)
+        public ConcreteIterator(ConcreteAggregate aggregate)
         {
-            this._collection = collection;
+            this.agg = aggregate; 
         }
 
-        // Gets first item
-        public Item First()
+        public override string CurrentItem()
         {
-            _current = 0;
-            return _collection[_current] as Item;
-        }
-
-        // Gets next item
-        public Item Next()
-        {
-            _current += _step;
-            if (!IsDone)
-                return _collection[_current] as Item;
+            //throw new NotImplementedException();
+            if (IsDone())
+                return agg[current];
             else
-                return null;
+                throw new Exception();
         }
 
-        // Gets or sets stepsize
-        public int Step
+        public override void First()
         {
-            get { return _step; }
-            set { _step = value; }
+            //throw new NotImplementedException();
+            current = 0;
         }
 
-        // Gets current iterator item
-        public Item CurrentItem
+        public override bool IsDone()
         {
-            get { return _collection[_current] as Item; }
+            //throw new NotImplementedException();
+            return  !( current >= agg.Count );
         }
 
-        // Gets whether iteration is complete
-        public bool IsDone
+        public override void Next()
         {
-            get { return _current >= _collection.Count; }
+                current = current + step;
         }
+
     }
 }
 

@@ -1,0 +1,12 @@
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.dll
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.pdb
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
