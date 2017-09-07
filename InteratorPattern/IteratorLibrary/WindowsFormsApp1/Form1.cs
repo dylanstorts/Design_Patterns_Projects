@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
             PopulateAgg(agg);
 
-            Iterator iter = agg.CreateIterator();
+            Iterator iter = agg.CreateIterator(IteratorType.completeIterator);
 
             for(iter.First(); iter.IsDone(); iter.Next())
             {
@@ -34,12 +34,69 @@ namespace WindowsFormsApp1
 
         private void PopulateAgg(ConcreteAggregate aggregate)
         {
-            aggregate.Add("Item 0");
-            aggregate.Add("Item 1");
-            aggregate.Add("Item 2");
-            aggregate.Add("Item 3");
-            aggregate.Add("Item 4");
-            aggregate.Add("Item 5");
+            aggregate.Add("Aaron");
+            aggregate.Add("Abbie");
+            aggregate.Add("Anna");
+            aggregate.Add("Berry");
+            aggregate.Add("Ben");
+            aggregate.Add("Balthasar");
+            aggregate.Add("Carol");
+            aggregate.Add("Camren");
+            aggregate.Add("Cori");
+            aggregate.Add("Casandra");
+            aggregate.Add("David");
+            aggregate.Add("Dylan");
+        }
+
+        private void btn_IterateA_Click(object sender, EventArgs e)
+        {
+            ConcreteAggregate agg = new ConcreteAggregate();
+
+            PopulateAgg(agg);
+
+            Iterator iter = agg.CreateIterator(IteratorType.aIterator);
+
+            listbox_selected.ClearSelected();
+
+            for (iter.First(); iter.IsDone(); iter.Next())
+            {
+                
+                listbox_selected.Items.Add(iter.CurrentItem());
+            }
+        }
+
+        private void btn_IterateB_Click(object sender, EventArgs e)
+        {
+            ConcreteAggregate agg = new ConcreteAggregate();
+
+            PopulateAgg(agg);
+
+            Iterator iter = agg.CreateIterator(IteratorType.bIterator);
+
+            listbox_selected.ClearSelected();
+
+            for (iter.First(); iter.IsDone(); iter.Next())
+            {
+                
+                listbox_selected.Items.Add(iter.CurrentItem());
+            }
+        }
+
+        private void btn_IterateC_Click(object sender, EventArgs e)
+        {
+            ConcreteAggregate agg = new ConcreteAggregate();
+
+            PopulateAgg(agg);
+
+            Iterator iter = agg.CreateIterator(IteratorType.cIterator);
+
+            listbox_selected.ClearSelected();
+
+            for (iter.First(); iter.IsDone(); iter.Next())
+            {
+                
+                listbox_selected.Items.Add(iter.CurrentItem());
+            }
         }
     }
 }

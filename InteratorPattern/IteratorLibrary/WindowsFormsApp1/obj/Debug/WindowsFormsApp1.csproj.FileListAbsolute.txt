@@ -10,3 +10,27 @@ C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\Ite
 C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.dll
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.pdb
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.dll
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.pdb
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

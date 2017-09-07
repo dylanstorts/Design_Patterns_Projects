@@ -11,36 +11,37 @@ namespace IteratorLibrary
 
     /// The 'Aggregate' that inherits a list of strings thus hiding the the makeup of the iterator
 
-    public abstract class Aggregate : List<string>
-    {
-        public abstract Iterator CreateIterator();
-    }
+    public abstract class Aggregate : List<string> {}
 
+    public enum IteratorType {completeIterator, aIterator, bIterator, cIterator }
+    
     /// The 'ConcreteAggregate' class
 
     public class ConcreteAggregate : Aggregate
     {
-        private List<string> aggList = new List<string>();
         
-        public override Iterator CreateIterator()
+        public Iterator CreateIterator(IteratorType iter)
         {
-            return new ConcreteIterator(this);
+            //return new CompleteIterator(this);
+            
+            switch (iter)
+            {
+                case IteratorType.completeIterator:
+                    return new CompleteIterator(this);
+                    
+                case IteratorType.aIterator:
+                    return new AIterator(this);
+                    
+                case IteratorType.bIterator:
+                    return new BIterator(this);
+                    
+                case IteratorType.cIterator:
+                    return new CIterator(this);
+                    
+                default: return new CompleteIterator(this);
+            }
+            
         }
-
-        //public int Count()
-        //{
-        //    return aggList.Count;
-        //}
-
-        //public string Get(int index)
-        //{
-        //    return aggList.ElementAt(index);
-        //}
-
-        //public void Set(string newItem)
-        //{
-        //    aggList.Add(newItem);
-        //}
     }
 
     /// The 'Iterator' interface
@@ -53,22 +54,21 @@ namespace IteratorLibrary
         abstract public string CurrentItem();
     }
     
-    /// The 'ConcreteIterator' class
+    /// The Concrete Iterator that goes over all elements
 
-    public class ConcreteIterator : Iterator
+    public class CompleteIterator : Iterator
     {
         private int current;
         private int step = 1;
         private ConcreteAggregate agg;
 
-        public ConcreteIterator(ConcreteAggregate aggregate)
+        public CompleteIterator(ConcreteAggregate aggregate)
         {
             this.agg = aggregate; 
         }
 
         public override string CurrentItem()
         {
-            //throw new NotImplementedException();
             if (IsDone())
                 return agg[current];
             else
@@ -77,21 +77,148 @@ namespace IteratorLibrary
 
         public override void First()
         {
-            //throw new NotImplementedException();
             current = 0;
         }
 
         public override bool IsDone()
         {
-            //throw new NotImplementedException();
             return  !( current >= agg.Count );
         }
 
         public override void Next()
         {
-                current = current + step;
+            current += step;
         }
 
+    }
+
+    public class AIterator : Iterator
+    {
+        private int current;
+        private int step = 1;
+        private ConcreteAggregate agg;
+
+        public AIterator(ConcreteAggregate aggregate)
+        {
+            this.agg = aggregate;
+        }
+
+        public override string CurrentItem()
+        {
+            if (IsDone())
+                return agg[current];
+            else
+                throw new Exception();
+        }
+
+        public override void First()
+        {
+            while(agg[current][0] != 'A')
+            {
+                current += step;
+            }
+        }
+
+        public override bool IsDone()
+        {
+            return !(current >= agg.Count);
+        }
+
+        public override void Next()
+        {
+            if (agg[current + step][0] == 'A')
+                current += step;
+
+            else
+                current = agg.Count;
+        }
+    }
+
+    public class BIterator : Iterator
+    {
+        private int current;
+        private int step = 1;
+        private ConcreteAggregate agg;
+
+        public BIterator(ConcreteAggregate aggregate)
+        {
+            this.agg = aggregate;
+        }
+
+        public override string CurrentItem()
+        {
+            if (IsDone())
+                return agg[current];
+            else
+                throw new Exception();
+        }
+
+        public override void First()
+        {
+            current = 0;
+            while (agg[current][0] != 'B')
+            {
+                current += step;
+            }
+        }
+
+        public override bool IsDone()
+        {
+            return !(current >= agg.Count);
+        }
+
+        public override void Next()
+        {
+            if (agg[current + step][0] == 'B')
+                current += step;
+
+            else
+                current = agg.Count;
+        }
+    }
+
+    public class CIterator : Iterator
+    {
+        private int current;
+        private int step = 1;
+        private ConcreteAggregate agg;
+
+        public CIterator(ConcreteAggregate aggregate)
+        {
+            this.agg = aggregate;
+        }
+
+        public override string CurrentItem()
+        {
+            if (IsDone())
+                return agg[current];
+            else
+                throw new Exception();
+        }
+
+        public override void First()
+        {
+            current = 0;
+            while (agg[current][0] != 'C')
+            {
+                current += step;
+            }
+        }
+
+        public override bool IsDone()
+        {
+            return !(current >= agg.Count);
+        }
+
+
+        public override void Next()
+        {
+            if (agg[current + step][0] == 'C')
+                current += step;
+
+            else
+                current = agg.Count;
+        }
     }
 }
 

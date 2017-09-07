@@ -4,3 +4,15 @@ C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\Ite
 C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\bin\Debug\IteratorLibrary.pdb
 C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.dll
 C:\Users\Dylan Storts\source\repos\Design_Patterns_Projects\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.pdb
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\bin\Debug\IteratorLibrary.dll
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\bin\Debug\IteratorLibrary.pdb
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.csprojResolveAssemblyReference.cache
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.csproj.CoreCompileInputs.cache
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.dll
+D:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.pdb
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\bin\Debug\IteratorLibrary.dll
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\bin\Debug\IteratorLibrary.pdb
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.csprojResolveAssemblyReference.cache
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.csproj.CoreCompileInputs.cache
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.dll
+H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\IteratorLibrary\obj\Debug\IteratorLibrary.pdb
