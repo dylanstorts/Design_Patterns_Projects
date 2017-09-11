@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
 
             Iterator iter = agg.CreateIterator(IteratorType.completeIterator);
 
-            for(iter.First(); iter.IsDone(); iter.Next())
+            for(iter.First(); !iter.IsDone(); iter.Next())
             {
                 listbox_displayAll.Items.Add(iter.CurrentItem() );
             }
@@ -34,17 +34,19 @@ namespace WindowsFormsApp1
 
         private void PopulateAgg(ConcreteAggregate aggregate)
         {
-            aggregate.Add("Aaron");
+            aggregate.Add("Ben");
             aggregate.Add("Abbie");
             aggregate.Add("Anna");
             aggregate.Add("Berry");
-            aggregate.Add("Ben");
+            
             aggregate.Add("Balthasar");
             aggregate.Add("Carol");
+
             aggregate.Add("Camren");
             aggregate.Add("Cori");
             aggregate.Add("Casandra");
             aggregate.Add("David");
+            aggregate.Add("Aaron");
             aggregate.Add("Dylan");
         }
 
@@ -58,7 +60,7 @@ namespace WindowsFormsApp1
 
             listbox_selected.ClearSelected();
 
-            for (iter.First(); iter.IsDone(); iter.Next())
+            for (iter.First(); !iter.IsDone(); iter.Next())
             {
                 
                 listbox_selected.Items.Add(iter.CurrentItem());
@@ -75,7 +77,7 @@ namespace WindowsFormsApp1
 
             listbox_selected.ClearSelected();
 
-            for (iter.First(); iter.IsDone(); iter.Next())
+            for (iter.First(); !iter.IsDone(); iter.Next())
             {
                 
                 listbox_selected.Items.Add(iter.CurrentItem());
@@ -92,7 +94,7 @@ namespace WindowsFormsApp1
 
             listbox_selected.ClearSelected();
 
-            for (iter.First(); iter.IsDone(); iter.Next())
+            for (iter.First(); !iter.IsDone(); iter.Next())
             {
                 
                 listbox_selected.Items.Add(iter.CurrentItem());

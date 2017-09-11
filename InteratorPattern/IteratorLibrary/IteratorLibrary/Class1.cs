@@ -69,7 +69,7 @@ namespace IteratorLibrary
 
         public override string CurrentItem()
         {
-            if (IsDone())
+            if (!IsDone())
                 return agg[current];
             else
                 throw new Exception();
@@ -82,7 +82,7 @@ namespace IteratorLibrary
 
         public override bool IsDone()
         {
-            return  !( current >= agg.Count );
+            return  ( current >= agg.Count );
         }
 
         public override void Next()
@@ -105,7 +105,7 @@ namespace IteratorLibrary
 
         public override string CurrentItem()
         {
-            if (IsDone())
+            if (!IsDone())
                 return agg[current];
             else
                 throw new Exception();
@@ -121,16 +121,18 @@ namespace IteratorLibrary
 
         public override bool IsDone()
         {
-            return !(current >= agg.Count);
+            return (current >= agg.Count - 1);
         }
 
         public override void Next()
         {
-            if (agg[current + step][0] == 'A')
-                current += step;
+            current += step;
+            
+            while (agg[current][0] != 'A' && !IsDone() )
+            {
+            current += step;
 
-            else
-                current = agg.Count;
+            }
         }
     }
 
@@ -147,7 +149,7 @@ namespace IteratorLibrary
 
         public override string CurrentItem()
         {
-            if (IsDone())
+            if (!IsDone())
                 return agg[current];
             else
                 throw new Exception();
@@ -155,7 +157,6 @@ namespace IteratorLibrary
 
         public override void First()
         {
-            current = 0;
             while (agg[current][0] != 'B')
             {
                 current += step;
@@ -164,16 +165,18 @@ namespace IteratorLibrary
 
         public override bool IsDone()
         {
-            return !(current >= agg.Count);
+            return (current >= agg.Count - 1);
         }
 
         public override void Next()
         {
-            if (agg[current + step][0] == 'B')
+            current += step;
+
+            while (agg[current][0] != 'B' && !IsDone())
+            {
                 current += step;
 
-            else
-                current = agg.Count;
+            }
         }
     }
 
@@ -190,7 +193,7 @@ namespace IteratorLibrary
 
         public override string CurrentItem()
         {
-            if (IsDone())
+            if (!IsDone())
                 return agg[current];
             else
                 throw new Exception();
@@ -198,7 +201,6 @@ namespace IteratorLibrary
 
         public override void First()
         {
-            current = 0;
             while (agg[current][0] != 'C')
             {
                 current += step;
@@ -207,17 +209,18 @@ namespace IteratorLibrary
 
         public override bool IsDone()
         {
-            return !(current >= agg.Count);
+            return (current >= agg.Count - 1);
         }
-
 
         public override void Next()
         {
-            if (agg[current + step][0] == 'C')
+            current += step;
+
+            while (agg[current][0] != 'C' && !IsDone())
+            {
                 current += step;
 
-            else
-                current = agg.Count;
+            }
         }
     }
 }

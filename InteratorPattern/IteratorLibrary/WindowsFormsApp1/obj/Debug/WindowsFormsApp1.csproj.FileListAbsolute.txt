@@ -34,3 +34,15 @@ H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debu
 H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 H:\ONU\DesignPatterns\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.dll
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\bin\Debug\IteratorLibrary.pdb
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Dylan Storts\Downloads\Design_Patterns_Projects-master\InteratorPattern\IteratorLibrary\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
