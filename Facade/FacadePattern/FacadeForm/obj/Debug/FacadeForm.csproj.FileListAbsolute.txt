@@ -1,0 +1,12 @@
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\bin\Debug\FacadeForm.exe.config
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\bin\Debug\FacadeForm.exe
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\bin\Debug\FacadeForm.pdb
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\obj\Debug\FacadeForm.csprojResolveAssemblyReference.cache
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\obj\Debug\FacadeForm.Form1.resources
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\obj\Debug\FacadeForm.Properties.Resources.resources
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\obj\Debug\FacadeForm.csproj.GenerateResource.Cache
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\obj\Debug\FacadeForm.csproj.CoreCompileInputs.cache
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\obj\Debug\FacadeForm.exe
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\obj\Debug\FacadeForm.pdb
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\bin\Debug\FacadePattern.dll
+C:\Users\Dylan Storts\Documents\VS_Projects\DesignPatterns\Facade\FacadePattern\FacadeForm\bin\Debug\FacadePattern.pdb
