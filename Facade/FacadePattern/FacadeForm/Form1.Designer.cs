@@ -75,11 +75,12 @@
             // 
             // panelFilter
             // 
+            this.panelFilter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFilter.Controls.Add(this.checkbox_filterPower);
             this.panelFilter.Controls.Add(this.tbox_gpm);
             this.panelFilter.Controls.Add(this.label2);
             this.panelFilter.Controls.Add(this.label1);
-            this.panelFilter.Location = new System.Drawing.Point(37, 50);
+            this.panelFilter.Location = new System.Drawing.Point(12, 12);
             this.panelFilter.Name = "panelFilter";
             this.panelFilter.Size = new System.Drawing.Size(200, 100);
             this.panelFilter.TabIndex = 0;
@@ -122,11 +123,12 @@
             // 
             // panelHeater
             // 
+            this.panelHeater.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelHeater.Controls.Add(this.numUpDown_temp);
             this.panelHeater.Controls.Add(this.checkbox_heaterPower);
             this.panelHeater.Controls.Add(this.label4);
             this.panelHeater.Controls.Add(this.label3);
-            this.panelHeater.Location = new System.Drawing.Point(37, 175);
+            this.panelHeater.Location = new System.Drawing.Point(12, 118);
             this.panelHeater.Name = "panelHeater";
             this.panelHeater.Size = new System.Drawing.Size(200, 111);
             this.panelHeater.TabIndex = 1;
@@ -185,13 +187,14 @@
             // 
             // panel_Feeder
             // 
+            this.panel_Feeder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_Feeder.Controls.Add(this.numUpDown_dose);
             this.panel_Feeder.Controls.Add(this.numUpDown_frequency);
             this.panel_Feeder.Controls.Add(this.checkbox_feederPower);
             this.panel_Feeder.Controls.Add(this.label7);
             this.panel_Feeder.Controls.Add(this.label6);
             this.panel_Feeder.Controls.Add(this.label5);
-            this.panel_Feeder.Location = new System.Drawing.Point(37, 313);
+            this.panel_Feeder.Location = new System.Drawing.Point(12, 235);
             this.panel_Feeder.Name = "panel_Feeder";
             this.panel_Feeder.Size = new System.Drawing.Size(200, 114);
             this.panel_Feeder.TabIndex = 2;
@@ -287,12 +290,13 @@
             // 
             // panel_Lights
             // 
+            this.panel_Lights.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_Lights.Controls.Add(this.checkbox_lightPower);
             this.panel_Lights.Controls.Add(this.btn_color);
             this.panel_Lights.Controls.Add(this.comboColor);
             this.panel_Lights.Controls.Add(this.label9);
             this.panel_Lights.Controls.Add(this.label8);
-            this.panel_Lights.Location = new System.Drawing.Point(37, 448);
+            this.panel_Lights.Location = new System.Drawing.Point(12, 355);
             this.panel_Lights.Name = "panel_Lights";
             this.panel_Lights.Size = new System.Drawing.Size(200, 130);
             this.panel_Lights.TabIndex = 3;
@@ -309,7 +313,7 @@
             // 
             // btn_color
             // 
-            this.btn_color.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_color.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_color.Location = new System.Drawing.Point(54, 85);
             this.btn_color.Name = "btn_color";
             this.btn_color.Size = new System.Drawing.Size(30, 30);
@@ -330,6 +334,7 @@
             this.comboColor.Name = "comboColor";
             this.comboColor.Size = new System.Drawing.Size(80, 21);
             this.comboColor.TabIndex = 3;
+            this.comboColor.Text = " ";
             // 
             // label9
             // 
@@ -352,6 +357,7 @@
             // 
             // panel_facade
             // 
+            this.panel_facade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_facade.Controls.Add(this.numUpDown_tanksize);
             this.panel_facade.Controls.Add(this.numUpDown_population);
             this.panel_facade.Controls.Add(this.combobox_color);
@@ -361,7 +367,7 @@
             this.panel_facade.Controls.Add(this.label12);
             this.panel_facade.Controls.Add(this.label11);
             this.panel_facade.Controls.Add(this.label10);
-            this.panel_facade.Location = new System.Drawing.Point(279, 109);
+            this.panel_facade.Location = new System.Drawing.Point(241, 118);
             this.panel_facade.Name = "panel_facade";
             this.panel_facade.Size = new System.Drawing.Size(200, 177);
             this.panel_facade.TabIndex = 4;
@@ -492,7 +498,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 614);
+            this.ClientSize = new System.Drawing.Size(455, 496);
             this.Controls.Add(this.panel_facade);
             this.Controls.Add(this.panel_Lights);
             this.Controls.Add(this.panel_Feeder);

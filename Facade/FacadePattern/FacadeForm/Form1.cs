@@ -23,6 +23,9 @@ namespace FacadeForm
         public Form1()
         {
             InitializeComponent();
+
+            comboColor.SelectedIndex     = 5;
+            combobox_color.SelectedIndex = 5;
         }
 
 
@@ -59,6 +62,24 @@ namespace FacadeForm
             comboColor.Text = lights.Color;//gets the current selected color to the light dropdown
 
             checkbox_lightPower.Checked = lights.getState();
+
+            switch (comboColor.SelectedItem.ToString())
+            {
+                case "Red":    btn_color.BackColor = Color.Red;
+                    break;
+                case "Green":  btn_color.BackColor = Color.Green;
+                    break;
+                case "Blue":   btn_color.BackColor = Color.Blue;
+                    break;
+                case "Yellow": btn_color.BackColor = Color.Yellow;
+                    break;
+                case "White":  btn_color.BackColor = Color.White;
+                    break;
+                default:       btn_color.BackColor = Color.Black;
+                    break;
+
+            }
+
         }
 
         private void UpdateFeeder()
@@ -107,5 +128,6 @@ namespace FacadeForm
         {
             UpdateFacade();
         }
+
     }
 }
