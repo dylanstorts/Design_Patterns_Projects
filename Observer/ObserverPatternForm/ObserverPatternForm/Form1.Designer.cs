@@ -44,6 +44,7 @@
             this.checkb_red.TabIndex = 0;
             this.checkb_red.Text = "Red";
             this.checkb_red.UseVisualStyleBackColor = true;
+            this.checkb_red.CheckedChanged += new System.EventHandler(this.checkb_red_CheckedChanged);
             // 
             // checkb_green
             // 
@@ -55,6 +56,7 @@
             this.checkb_green.TabIndex = 1;
             this.checkb_green.Text = "Green";
             this.checkb_green.UseVisualStyleBackColor = true;
+            this.checkb_green.CheckedChanged += new System.EventHandler(this.checkb_green_CheckedChanged);
             // 
             // checkb_blue
             // 
@@ -66,6 +68,7 @@
             this.checkb_blue.TabIndex = 2;
             this.checkb_blue.Text = "Blue";
             this.checkb_blue.UseVisualStyleBackColor = true;
+            this.checkb_blue.CheckedChanged += new System.EventHandler(this.checkb_blue_CheckedChanged);
             // 
             // btn_led
             // 

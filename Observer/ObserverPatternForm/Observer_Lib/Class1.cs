@@ -10,24 +10,29 @@ namespace Observer_Lib
     //my abstract subject
     abstract public class ColorBox : CheckBox
     {
-        bool state;
+        public bool State;
 
-        public abstract void Attach();
-        public abstract void Detach();
+        public abstract void Attach(ColorMix colorMix);
+        public abstract void Detach(ColorMix colorMix);
         public abstract void Notify();
     }
 
     //one of my concrete subjects
     public class RedBox : ColorBox
     {
-        public override void Attach()
+        public RedBox()
         {
-            throw new NotImplementedException();
+            this.State = false;
         }
 
-        public override void Detach()
+        public override void Attach(ColorMix colorMix)
         {
-            throw new NotImplementedException();
+            colorMix.redCheck = this.State;
+        }
+
+        public override void Detach(ColorMix colorMix)
+        {
+            colorMix.redCheck = false;
         }
 
         public override void Notify()
@@ -39,14 +44,19 @@ namespace Observer_Lib
     //another concrete subject
     public class GreenBox : ColorBox
     {
-        public override void Attach()
+        public GreenBox()
         {
-            throw new NotImplementedException();
+            this.State = false;
         }
 
-        public override void Detach()
+        public override void Attach(ColorMix colorMix)
         {
-            throw new NotImplementedException();
+            colorMix.greenCheck = this.State;
+        }
+
+        public override void Detach(ColorMix colorMix)
+        {
+            colorMix.greenCheck = false;
         }
 
         public override void Notify()
@@ -58,14 +68,19 @@ namespace Observer_Lib
     //another concrete subject
     public class BlueBox : ColorBox
     {
-        public override void Attach()
+        public BlueBox()
         {
-            throw new NotImplementedException();
+            this.State = false;
         }
 
-        public override void Detach()
+        public override void Attach(ColorMix colorMix)
         {
-            throw new NotImplementedException();
+            colorMix.blueCheck = this.State;
+        }
+
+        public override void Detach(ColorMix colorMix)
+        {
+            colorMix.blueCheck = false;
         }
 
         public override void Notify()
@@ -77,8 +92,8 @@ namespace Observer_Lib
     //my abstract observer class
     abstract public class Color
     {
-        public List<CheckBox>   colorBoxes = new List<CheckBox>();
-        public List<string> colors     = new List<string>();
+        public CheckBox red, green, blue;
+        public List<string>   colors     = new List<string>();
 
         abstract public string Update();
 
@@ -87,61 +102,101 @@ namespace Observer_Lib
     //my concrete observer class
     public class ColorMix : Color
     {
-        public ColorMix(CheckBox Red, CheckBox Green, CheckBox Blue)
-        {
-            colorBoxes.Add(Red);
-            colorBoxes.Add(Green);
-            colorBoxes.Add(Blue);
+        bool Red;
+        bool Green;
+        bool Blue;
 
-            colors.Add("FF0000"); //red    1
-            colors.Add("33CC33"); //green  2
-            colors.Add("0000FF"); //blue   3
-            colors.Add("FFFF00"); //yellow || red & green  3
-            colors.Add("9933FF"); //purple || red & blue   4
-            colors.Add("00FFFF"); //aqua   || green & blue 5
+        public ColorMix()
+        {
+            Red = false;
+            Green = false;
+            Blue = false;
+
+            colors.Add("#FF0000"); //red    1
+            colors.Add("#33CC33"); //green  2
+            colors.Add("#0000FF"); //blue   3
+            colors.Add("#FFFF00"); //yellow || red & green  3
+            colors.Add("#9933FF"); //purple || red & blue   4
+            colors.Add("#00FFFF"); //aqua   || green & blue 5
+            colors.Add("#000000"); //black
+            colors.Add("#FFFFFF"); //white
             
         }
+
+        public bool redCheck
+        {
+            get{ return Red; }
+
+            set { Red = value; }
+        }
+
+        public bool blueCheck
+        {
+            get { return Blue; }
+
+            set { Blue = value; }
+        }
+
+        public bool greenCheck
+        {
+            get { return Green; }
+
+            set { Green = value; }
+        }
+
 
         public override string Update()
         {
             int colorIndex = 0;
 
-            if(    colorBoxes[0].Checked == true 
-                && colorBoxes[1].Checked == false
-                && colorBoxes[2].Checked == false)
+            if(    Red == true 
+                && Green == false
+                && Blue == false)
             {
                 colorIndex = 0;
             }
-            else if(colorBoxes[0].Checked == false
-                 && colorBoxes[1].Checked == true
-                 && colorBoxes[2].Checked == false)
+            else if(Red == false
+                 && Green == true
+                 && Blue == false)
             {
                 colorIndex = 1;
             }
-            else if (colorBoxes[0].Checked == false
-                  && colorBoxes[1].Checked == false
-                  && colorBoxes[2].Checked == true)
+            else if (Red == false
+                  && Green == false
+                  && Blue == true)
             {
                 colorIndex = 2;
             }
-            else if (colorBoxes[0].Checked == true
-                  && colorBoxes[1].Checked == true
-                  && colorBoxes[2].Checked == false)
+            else if (Red == true
+                  && Green == true
+                  && Blue == false)
             {
                 colorIndex = 3;
             }
-            else if (colorBoxes[0].Checked == true
-                  && colorBoxes[1].Checked == false
-                  && colorBoxes[2].Checked == true)
+            else if (Red == true
+                  && Green == false
+                  && Blue == true)
             {
                 colorIndex = 4;
             }
-            else
+            else if (Red == false
+                  && Green == true
+                  && Blue == true)
             {
                 colorIndex = 5;
             }
+            else if (Red == false
+                  && Green == false
+                  && Blue == false)
+            {
+                colorIndex = 6;
+            }
+            else
+            {
+                colorIndex = 7;
+            }
 
-            return colors[colorIndex];
+                return colors[colorIndex];
         }
     }
 

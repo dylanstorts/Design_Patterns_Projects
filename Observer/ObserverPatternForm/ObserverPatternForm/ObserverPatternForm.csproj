@@ -78,5 +78,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Observer_Lib\Observer_Lib.csproj">
+      <Project>{DC9D3F60-4890-455E-90A7-390B57D18F93}</Project>
+      <Name>Observer_Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
