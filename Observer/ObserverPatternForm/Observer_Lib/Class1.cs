@@ -11,6 +11,7 @@ namespace Observer_Lib
     abstract public class ColorBox : CheckBox
     {
         public bool State;
+        public string colorHex;
 
         public abstract void Attach(ColorMix colorMix);
         public abstract void Detach(ColorMix colorMix);
@@ -22,6 +23,7 @@ namespace Observer_Lib
     {
         public RedBox()
         {
+            this.colorHex = "#FF0000";
             this.State = false;
         }
 
@@ -46,6 +48,7 @@ namespace Observer_Lib
     {
         public GreenBox()
         {
+            this.colorHex = "#33CC33";
             this.State = false;
         }
 
@@ -70,6 +73,7 @@ namespace Observer_Lib
     {
         public BlueBox()
         {
+            this.colorHex = "#0000FF";
             this.State = false;
         }
 
@@ -115,9 +119,9 @@ namespace Observer_Lib
             colors.Add("#FF0000"); //red    1
             colors.Add("#33CC33"); //green  2
             colors.Add("#0000FF"); //blue   3
-            colors.Add("#FFFF00"); //yellow || red & green  3
-            colors.Add("#9933FF"); //purple || red & blue   4
-            colors.Add("#00FFFF"); //aqua   || green & blue 5
+            colors.Add("#FFFF00"); //yellow || red & green  4
+            colors.Add("#9933FF"); //purple || red & blue   5
+            colors.Add("#00FFFF"); //aqua   || green & blue 6
             colors.Add("#000000"); //black
             colors.Add("#FFFFFF"); //white
             

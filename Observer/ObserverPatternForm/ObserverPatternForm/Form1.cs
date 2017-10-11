@@ -28,9 +28,19 @@ namespace ObserverPatternForm
         GreenBox greenBox = new GreenBox();
         BlueBox  blueBox  = new BlueBox();
 
+        #region Delegate Attempt
 
-        //public delegate void ColorHandler(ColorMix colorMix);
+        //public delegate void ColorHandler(ColorBox myBox, ColorMix colorMix);
+        public EventHandler colorHandler;
         //ColorHandler colorHandler;
+
+        public class ColorArgs : EventArgs
+        {
+            public bool   checkb;
+            public string hex;
+        }
+        ColorArgs myColorArgs;
+        #endregion
 
         private void AttachThis(ColorBox myBox, ColorMix myMix)
         {
@@ -49,6 +59,7 @@ namespace ObserverPatternForm
             if (checkb_red.Checked)
             {
                 AttachThis(redBox, myColorMixer);
+                //colorHandler += redBox.Attach(redBox, myColorMixer);
             }
             else
                 DetachThis(redBox, myColorMixer);
@@ -58,7 +69,7 @@ namespace ObserverPatternForm
 
         private void checkb_green_CheckedChanged(object sender, EventArgs e)
         {
-            greenBox.State = checkb_red.Checked;
+            greenBox.State = checkb_green.Checked;
 
             if (checkb_green.Checked)
             {
@@ -72,7 +83,7 @@ namespace ObserverPatternForm
 
         private void checkb_blue_CheckedChanged(object sender, EventArgs e)
         {
-            blueBox.State = checkb_red.Checked;
+            blueBox.State = checkb_blue.Checked;
 
             if (checkb_blue.Checked)
             {
