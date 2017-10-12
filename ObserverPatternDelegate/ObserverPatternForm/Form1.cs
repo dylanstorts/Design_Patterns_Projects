@@ -32,7 +32,7 @@ namespace ObserverPatternForm
 
 
         public delegate void ColorHandlerDelegate(ColorMix myColorMix, ColorArgs myColorArgs);
-        //public event         
+           
         ColorHandlerDelegate MyColorHandler;
 
         public class ColorArgs : EventArgs
@@ -53,10 +53,8 @@ namespace ObserverPatternForm
             {
                 if (e.check)
                     observer.Add(e.hex);
-
                 else
                     observer.Remove(e.hex);
-
             }
         }
 

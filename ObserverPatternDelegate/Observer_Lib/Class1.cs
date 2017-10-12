@@ -10,14 +10,9 @@ namespace Observer_Lib
     //my abstract subject
     abstract public class ColorBox : CheckBox
     {
-        public bool State;
         public string colorHex;
 
         public abstract string GetHex();
-
-        public abstract void Attach(ColorMix colorMix);
-        public abstract void Detach(ColorMix colorMix);
-        public abstract void Notify();
     }
 
     //one of my concrete subjects
@@ -26,27 +21,11 @@ namespace Observer_Lib
         public RedBox()
         {
             this.colorHex = "#FF0000";
-            this.State = false;
         }
-
-        public override void Attach(ColorMix colorMix)
-        {
-            colorMix.redCheck = this.State;
-        }
-
-        public override void Detach(ColorMix colorMix)
-        {
-            colorMix.redCheck = false;
-        }
-
+        
         public override string GetHex()
         {
             return this.colorHex;
-        }
-
-        public override void Notify()
-        {
-            throw new NotImplementedException();
         }
     }
 
@@ -56,26 +35,10 @@ namespace Observer_Lib
         public GreenBox()
         {
             this.colorHex = "#33CC33";
-            this.State = false;
         }
-
-        public override void Attach(ColorMix colorMix)
-        {
-            colorMix.greenCheck = this.State;
-        }
-
-        public override void Detach(ColorMix colorMix)
-        {
-            colorMix.greenCheck = false;
-        }
-
         public override string GetHex()
         {
             return this.colorHex;
-        }
-        public override void Notify()
-        {
-            throw new NotImplementedException();
         }
     }
 
@@ -85,27 +48,11 @@ namespace Observer_Lib
         public BlueBox()
         {
             this.colorHex = "#0000FF";
-            this.State = false;
-        }
-
-
-        public override void Attach(ColorMix colorMix)
-        {
-            colorMix.blueCheck = this.State;
-        }
-
-        public override void Detach(ColorMix colorMix)
-        {
-            colorMix.blueCheck = false;
         }
 
         public override string GetHex()
         {
             return this.colorHex;
-        }
-        public override void Notify()
-        {
-            throw new NotImplementedException();
         }
     }
 
@@ -144,28 +91,6 @@ namespace Observer_Lib
             colors.Add("#FFFFFF"); //white
             
         }
-
-        public bool redCheck
-        {
-            get{ return Red; }
-
-            set { Red = value; }
-        }
-
-        public bool blueCheck
-        {
-            get { return Blue; }
-
-            set { Blue = value; }
-        }
-
-        public bool greenCheck
-        {
-            get { return Green; }
-
-            set { Green = value; }
-        }
-
 
         public override string Update()
         {
